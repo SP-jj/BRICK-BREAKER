@@ -1,4 +1,4 @@
-# TETRIS
+# BRICKS Arcade Game
 
 https://www.youtube.com/watch?v=-8teaOoZdxA&ab_channel=NikolayMayorov
 
