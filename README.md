@@ -1,1 +1,1 @@
-# TETRIS
+# BRICKS Arcade Game
