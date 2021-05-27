@@ -10,7 +10,7 @@ const int WIDTH = 620;
 const int HEIGHT = 720;
 const int FONT_SIZE = 32;
 const int SPEED = 9;
-const int BALL_SPEED = 12;
+const int BALL_SPEED = 8;
 const int BALL_SIZE = 16;
 const int ROW = 8;			// horizontal length of rows
 const int COL = 13;
@@ -114,7 +114,7 @@ void update()
 		double norm = rel/(paddle.w/2);
 		double bounce = norm * (5*PI/12);
 		velY = -BALL_SPEED * cos(bounce);
-		velY = BALL_SPEED * -sin(bounce);
+		velX = BALL_SPEED * -sin(bounce);
 	}
 
 	// check if the ball is hitting the walls
@@ -176,8 +176,9 @@ void update()
 				ball.y += 20;
 			}
 
-			reset = false;
 		}
+        if(bricks[i])
+            reset = false;
 	}
 	if(reset)
 		resetBricks();
