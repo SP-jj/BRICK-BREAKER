@@ -4,8 +4,6 @@ https://www.youtube.com/watch?v=z-o6nmrJbsE&ab_channel=AveryMakesGames
 
 SDL - for handling low-level I/O
 
-OpenGl - for graphics
-
 
 # ideas for alterations:
 
@@ -21,4 +19,15 @@ med to implement:
 hard to implement:
 
 - create powerups
+-   each pup lasts for a specified time(5 sec for example)
+-   each pup increases a stat (paddle speed for example)
+-   struct powerUps_paddleSpeed
+-   {
+paddleSpeedInc;  // increment of new paddle speed
+frameObtained;    // time when it was gotten(when brick was destroyed)
+lifetime;         // hhow many seconds it lasts
+}
+
+-   have a class variable vector<powerUps_paddleSpeed>  // one vecor for ach type of power up
+-   
  
